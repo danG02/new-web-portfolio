@@ -1,0 +1,106 @@
+/*
+colors to use 
+#008000
+#008040
+#008080
+#004080
+#000080
+#400080
+*/
+@media only screen and (max-width: 600px) {
+    #profile-picture {
+        max-width: 150px;
+        max-height: 150px
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+body {
+    background-image: url("/Users/danny/Desktop/Danny's Code Portfolio/web-portfolio/Pictures/BlueBG.jpg");
+    background-size: cover;
+    background-color: green;
+}
+.Name {
+    font-size: 64px;
+    padding-left: 15%;
+    padding-top: 20%;
+}
+#inital-box {
+    border: 2px dotted;
+    max-width: 75px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 100px;
+    margin-top: 20px;
+    border-radius: 60%;
+    padding: 3px;
+}
+#inital-box:hover {
+    color:green;
+}
+.MainContainer {
+    width: 550px;
+    height: 350px;
+    margin: 0 auto;
+    background: none;
+    perspective: 800px;
+}
+#container {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+    border: 5px solid white;
+    backface-visibility: hidden;
+}
+
+#container.flipped {
+    transform: rotateY(180deg);
+}
+
+/*#container:hover {
+    transform: rotateY(180deg);
+}*/
+.front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    backface-visibility: hidden;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+}
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: transparent;
+    transform: rotateY(180deg);
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+}
+#navbar {
+    height: 100px;
+    margin: 10px;
+    margin-top: 75px;
+    text-align: center;
+}
+li {
+    display: inline-block;
+    font-size: 36px;
+    padding: 20px;
+    text-decoration: none;
+    border: solid;
+}
+li:hover {
+    font-size: 50px;
+}
+/*
+li[id="about"]:checked #Biofront {
+    transform: rotateY(180deg);
+}
+*/
