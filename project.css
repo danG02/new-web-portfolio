@@ -1,9 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    color: white;
 }
 body {
     background-image: url("https://images.unsplash.com/photo-1557683316-973673baf926?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1615&q=80");
+    background-size: cover;
 }
 .page-title {
     text-align: center;
@@ -18,7 +20,7 @@ body {
     z-index: 1; 
     top: 0; 
     left: 0;
-    background-color: #4F9D69; 
+    background-image: linear-gradient(darkblue, purple);
     overflow-x: hidden; 
     padding-top: 60px; 
     transition: 0.5s; 
@@ -34,7 +36,8 @@ body {
   }
   
   .sidenav a:hover {
-    color: green;
+    color: black;
+    background: white;
   }
   
   .sidenav .closebtn {
@@ -70,14 +73,15 @@ body {
     display: inline-block;
     position: relative;
     left: 25%;
+    background: none;
 }
 
 .github {
-    max-width: 60;
-    max-height: 60px;
+    max-width: 50;
+    max-height: 50px;
     display: inline-block;
     position: relative;
-    left: 25%;
+    left: 5%;
 
 }
 
@@ -109,4 +113,3 @@ th, td {
     max-height: 550px;
     box-shadow: 2px 2px 4px #000000;
 }
-
