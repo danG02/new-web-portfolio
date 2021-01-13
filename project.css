@@ -106,7 +106,7 @@ th, td {
   perspective: 800px;
 }
 
-.Card1 {
+.Card {
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
@@ -116,11 +116,11 @@ th, td {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-.Card1:hover {
+.Card:hover {
   transform: scale(1.1);
 }
 
-.Card1.flipped {
+.Card.flipped {
   transform: rotateY(180deg);
 }
 
@@ -136,6 +136,28 @@ th, td {
   background-size: 190px;
   background-repeat: no-repeat;
   background-position: bottom;
+}
+
+.front2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  backface-visibility: hidden;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.back2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: transparent;
+  transform: rotateY(180deg);
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  background-image: linear-gradient(#2fbcc5, #302271);
 }
 
 .back {

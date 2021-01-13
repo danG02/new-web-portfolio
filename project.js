@@ -1,4 +1,4 @@
-const triggerFlip = document.querySelector('.Card1')
+const triggerFlip = document.querySelector('.Card')
 //const box = document.querySelector('.Container')
 
 
