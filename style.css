@@ -19,10 +19,13 @@ colors to use
     color: white;
 }
 body {
-    background-image: url("https://images.unsplash.com/photo-1557683316-973673baf926?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1615&q=80");
-    background-size: cover;
-    background-color: darkblue;
+    background-image: url("Pictures/Background_.png");
+    background-size: auto;
+    background-color: lightblue;
+    width: 100%;
+    height: 100%;
 }
+
 .Name {
     font-size: 64px;
     padding-left: 15%;

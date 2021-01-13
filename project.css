@@ -1,17 +1,18 @@
 * {
-    margin: 0;
-    padding: 0;
-    color: white;
+  margin: 0;
+  padding: 0;
+  color: black;
 }
 body {
-    background-image: url("https://images.unsplash.com/photo-1557683316-973673baf926?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1615&q=80");
-    background-size: cover;
+  background-size: cover;
+  height: 100%;
 }
 .page-title {
-    text-align: center;
-    border-bottom: 2px solid white;
-    padding-top: 20px;
-}
+  text-align: center;
+  border-bottom: 2px solid white;
+  padding-top: 20px;
+  background-image: url("Pictures/Background_.png");  
+  }
 
 .sidenav {
     height: 100%; 
@@ -20,7 +21,7 @@ body {
     z-index: 1; 
     top: 0; 
     left: 0;
-    background-image: linear-gradient(darkblue, purple);
+    background-image: linear-gradient(#302271, #2fbcc5);
     overflow-x: hidden; 
     padding-top: 60px; 
     transition: 0.5s; 
@@ -57,15 +58,6 @@ body {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
-*/
-
-.Intro {
-    width: 400px;
-    margin:  auto;
-    font-size: 20px;
-    word-spacing: 5px;
-    padding: 10px;
-}
 
 .home {
     max-width: 60px;
@@ -85,14 +77,6 @@ body {
 
 }
 
-.insta {
-    max-width: 100px;
-    max-height: 100px;
-    display: inline-block;
-    position: relative;
-    left: 40%;
-} 
-*/
 .tab {
     margin: 0 auto;
 }
@@ -112,4 +96,118 @@ th, td {
     max-width: 550px;
     max-height: 550px;
     box-shadow: 2px 2px 4px #000000;
+}
+
+
+.Container {
+  width: 250px;
+  height: 250px;
+  background: none;
+  perspective: 800px;
+}
+
+.Card1 {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+  border: 5px solid black;
+  backface-visibility: hidden;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.Card1:hover {
+  transform: scale(1.1);
+}
+
+.Card1.flipped {
+  transform: rotateY(180deg);
+}
+
+.front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  backface-visibility: hidden;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  background-image: url("Pictures/RPS_Icon.png");
+  background-size: 190px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: transparent;
+  transform: rotateY(180deg);
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  background-image: linear-gradient(#2fbcc5, #302271);
+}
+
+.SourceButton, 
+.DemoButton {
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  background-color: #2fbcc5;
+  border-radius: 100%;
+  margin: 0;
+  position: absolute;
+  max-width: 100px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  transition-duration: 0.4s;
+}
+
+.SourceButton:hover, 
+.DemoButton:hover {
+  background-color: white;;
+} 
+.SourceButton {
+  top: 35%;
+  left: 30%;
+}
+
+.DemoButton {
+  top: 65%;
+  left: 30%;
+
+}
+
+.description {
+  text-align: center;
+  padding-top: 30px;
+
+}
+
+#footer {
+  background-image: url("Pictures/Background_.png");
+  height: 10%;
+  /* The bottom four is how I fixed floating footer*/
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  right: 0;
+}
+
+#head1 {
+  background-image: linear-gradient(#2fbcc5, #302271);
+  height: 20%;
+  text-align: center;
+  padding-top: 5%;
+  color: black;
+}
+
+#End {
+  text-align: right;
+  padding: 10px;
+  padding-top: 40px;
+  font-size: 12px;
 }
