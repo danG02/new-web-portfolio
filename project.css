@@ -146,6 +146,10 @@ th, td {
   backface-visibility: hidden;
   overflow: hidden;
   -webkit-backface-visibility: hidden;
+  background-image: url("Pictures/Tetris_App_Icon.png");
+  background-size: 190px;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .back2 {
@@ -227,9 +231,28 @@ th, td {
   color: black;
 }
 
+#head2 {
+  background-image: linear-gradient(#2fbcc5, #302271);
+  height: 20%;
+  text-align: center;
+  padding-top: 5%;
+  color: black;
+}
+
 #End {
-  text-align: right;
-  padding: 10px;
-  padding-top: 40px;
+  position: absolute;
+  bottom: 0; 
+  right: 0;  
+  text-align:right;
   font-size: 12px;
+  padding: 5px;
+}
+
+#email {
+  position: absolute;
+  bottom: 0; 
+  left: 0;  
+  text-align: left;
+  font-size: 12px;
+  padding: 5px;
 }
