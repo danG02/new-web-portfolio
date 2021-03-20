@@ -22,3 +22,6 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("main").style.marginLeft = "0";
 }
+
+//closes navbar after 5s if user doesnt hover over X
+setTimeout(function() { closeNav(); }, 5000);
